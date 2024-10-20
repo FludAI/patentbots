@@ -1,0 +1,152 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_patentName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_baseValue",
+						"type": "uint256"
+					}
+				],
+				"name": "addPatent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_patentId",
+						"type": "uint256"
+					}
+				],
+				"name": "getPatent",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "patentId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "patentName",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "baseValue",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct PatentManager.Patent",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "patentCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "patents",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "patentId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "patentName",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "baseValue",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/PatentManager.sol": "PatentManager"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/PatentManager.sol": {
+			"keccak256": "0x08631732b1c4c062ef35c13dee37c6d6c7bee962fbfd7bbc72db361586ac0308",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aaa3b09ea650f409090cd2dfc823bf3ef6ebcf503cc928544fabc978e392f797",
+				"dweb:/ipfs/QmWNe8jcVeNsD72KqqxkkaURjgAK9B9WokY8JFAD2v1PQo"
+			]
+		}
+	},
+	"version": 1
+}

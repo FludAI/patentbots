@@ -1,0 +1,280 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_patentId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_royaltyPercentage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_licensee",
+						"type": "address"
+					}
+				],
+				"name": "addLicense",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_patentName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_baseValue",
+						"type": "uint256"
+					}
+				],
+				"name": "addPatent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_patentId",
+						"type": "uint256"
+					}
+				],
+				"name": "calculatePatentValue",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "commercializationActivities",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "activityName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "impact",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "licenseCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "licenses",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "licenseId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "licensee",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "royaltyPercentage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "royaltiesPaid",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_patentId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_activityName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_impact",
+						"type": "uint256"
+					}
+				],
+				"name": "logActivity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "patentCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "patents",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "patentId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "patentName",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "baseValue",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_licenseId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "payRoyalties",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/PatentBots.sol": "PatentBot"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/PatentBots.sol": {
+			"keccak256": "0xd9daaa9ce8fe3c9e813befa96b29bde16d89bc7dbdf0ab800109696182b8460a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8e6a5d1d25bc2d177a481545315b7238ca51d477d22095fbce31f7ee17700729",
+				"dweb:/ipfs/QmbVSmaDpsQCVFjXNabfMMuYKxwDcoW16Tw25aWT5soH9M"
+			]
+		}
+	},
+	"version": 1
+}

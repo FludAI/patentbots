@@ -1,0 +1,149 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "commercializationActivities",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "activityName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "impact",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_patentId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "getActivity",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "activityName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "impact",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct ActivityManager.CommercialActivity",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_patentId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_activityName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_impact",
+						"type": "uint256"
+					}
+				],
+				"name": "logActivity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ActivityManager.sol": "ActivityManager"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ActivityManager.sol": {
+			"keccak256": "0x92d800227ff63e59bddb75c1fd872efcc573cefe7b876053646d200cf83da52c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a772835c27d6892bb95f579c1bf6a14fa73b0680ac5f7e237c5db0a87a7b4426",
+				"dweb:/ipfs/QmfWXZw1NU4YW9Y8Z7tdtsxhvFDkT49mb4kTdeQvBHWyZw"
+			]
+		}
+	},
+	"version": 1
+}

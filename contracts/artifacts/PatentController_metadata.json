@@ -1,0 +1,199 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_patentManager",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_licenseManager",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_activityManager",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "activityManager",
+				"outputs": [
+					{
+						"internalType": "contract ActivityManager",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_patentId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_royaltyPercentage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_licensee",
+						"type": "address"
+					}
+				],
+				"name": "addLicense",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_patentName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_baseValue",
+						"type": "uint256"
+					}
+				],
+				"name": "addPatent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "licenseManager",
+				"outputs": [
+					{
+						"internalType": "contract LicenseManager",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_patentId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_activityName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_impact",
+						"type": "uint256"
+					}
+				],
+				"name": "logActivity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "patentManager",
+				"outputs": [
+					{
+						"internalType": "contract PatentManager",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/PatentController.sol": "PatentController"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ActivityManager.sol": {
+			"keccak256": "0x92d800227ff63e59bddb75c1fd872efcc573cefe7b876053646d200cf83da52c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a772835c27d6892bb95f579c1bf6a14fa73b0680ac5f7e237c5db0a87a7b4426",
+				"dweb:/ipfs/QmfWXZw1NU4YW9Y8Z7tdtsxhvFDkT49mb4kTdeQvBHWyZw"
+			]
+		},
+		"contracts/LicenseManager.sol": {
+			"keccak256": "0x04ddc96d23fe0b3f3804ed57f639511c5bb3f29f22cb2639024d17492ef89fe3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://385e05a1f15e58c68b1cdee469b2b5b75e41fa4cc46828a453d5f002609d7be3",
+				"dweb:/ipfs/QmPok2Mv4eu7RzdcJmeS6fjA5G2HvDsbrRmuqbbZ3FYr4c"
+			]
+		},
+		"contracts/PatentController.sol": {
+			"keccak256": "0xfec2a462620e5207a2a8412da469923141e238a0f7bc800008f8776c5b39c5a0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://80ed40c69a8a8df79e0b328b1eb0edce14536e48214f27657e6a19cfba179b9d",
+				"dweb:/ipfs/QmQTbbXQjVyiJAEh469D4QoHPDoxKEDaS4JDXc7Tayyrg9"
+			]
+		},
+		"contracts/PatentManager.sol": {
+			"keccak256": "0x08631732b1c4c062ef35c13dee37c6d6c7bee962fbfd7bbc72db361586ac0308",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aaa3b09ea650f409090cd2dfc823bf3ef6ebcf503cc928544fabc978e392f797",
+				"dweb:/ipfs/QmWNe8jcVeNsD72KqqxkkaURjgAK9B9WokY8JFAD2v1PQo"
+			]
+		}
+	},
+	"version": 1
+}

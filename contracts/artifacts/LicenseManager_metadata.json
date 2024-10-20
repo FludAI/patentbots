@@ -1,0 +1,139 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_patentId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_royaltyPercentage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_licensee",
+						"type": "address"
+					}
+				],
+				"name": "addLicense",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "licenseCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "licenses",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "licenseId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "patentId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "licensee",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "royaltyPercentage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "royaltiesPaid",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_licenseId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "payRoyalties",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LicenseManager.sol": "LicenseManager"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/LicenseManager.sol": {
+			"keccak256": "0x04ddc96d23fe0b3f3804ed57f639511c5bb3f29f22cb2639024d17492ef89fe3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://385e05a1f15e58c68b1cdee469b2b5b75e41fa4cc46828a453d5f002609d7be3",
+				"dweb:/ipfs/QmPok2Mv4eu7RzdcJmeS6fjA5G2HvDsbrRmuqbbZ3FYr4c"
+			]
+		}
+	},
+	"version": 1
+}
